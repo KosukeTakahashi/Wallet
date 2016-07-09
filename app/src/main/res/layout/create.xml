@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/editChangeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#BBB">
+
+        <EditText
+            android:id="@+id/editChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="change"
+            android:inputType="numberSigned"
+            android:textColor="#FFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/editWhenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editChangeLayout"
+        android:clickable="true"
+        android:textColorHint="#BBB">
+
+        <EditText
+            android:id="@+id/editWhen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="when"
+            android:inputType="date"
+            android:textColor="#FFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editWhenLayout"
+        android:textColorHint="#BBB">
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description"
+            android:textColor="#FFF" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>
